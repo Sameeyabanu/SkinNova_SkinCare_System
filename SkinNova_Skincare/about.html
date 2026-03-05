@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="About SkinNova System - Learn about our premium Ayurvedic skincare brand and natural ingredients." />
+  <title>About Us | SkinNova System Skincare</title>
+  <link rel="stylesheet" href="ayurveda.css" />
+  <link rel="stylesheet" href="ayurveda-sections.css" />
+  <link rel="stylesheet" href="ayurveda-components.css" />
+  <link rel="icon" href="logo.png" type="image/png" />
+  <script>
+    if (sessionStorage.getItem('adminLoggedIn') !== 'true') {
+      window.location.replace('admin.html');
+    }
+  </script>
+</head>
+
+<body>
+  <header role="banner" id="site-header">
+    <div class="header-container">
+      <h1><a href="index.html" class="logo-link"><img src="./logo1.png" height="50" width="50" alt="SkinNova Logo">
+          SkinNova System</a></h1>
+      <button class="hamburger" id="hamburger-menu" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+      <nav id="main-nav" role="navigation" aria-label="Main Navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html" class="active">About</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="admin.html">Admin</a></li>
+        </ul>
+      </nav>
+      <div class="header-actions">
+        <div class="social-icons">
+          <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" class="social-icon instagram"
+            aria-label="Instagram">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <path
+                d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+            </svg>
+          </a>
+          <a href="https://www.linkedin.com/in/sameeya-banu-0a7b3b2b2/" target="_blank" rel="noopener noreferrer"
+            class="social-icon linkedin" aria-label="LinkedIn">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <path
+                d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+            </svg>
+          </a>
+        </div>
+        <button id="wishlist-icon" class="header-icon" aria-label="View wishlist">
+          <span>❤️</span><span id="wishlist-count" class="icon-badge">0</span>
+        </button>
+        <button id="cart-icon" class="header-icon" aria-label="View cart">
+          <span>🛒</span><span id="cart-count" class="icon-badge">0</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="page-hero-content">
+        <h2>About SkinNova System</h2>
+        <p>Discover our story and commitment to natural beauty</p>
+      </div>
+    </section>
+
+    <section class="section section--about-page">
+      <div class="section-container">
+        <div class="about-intro">
+          <h3>Our Story</h3>
+          <p>SkinNova System is a premium skincare brand dedicated to combining the power of natural
+            ingredients with scientific research. We believe that true beauty comes from healthy,
+            well-nurtured skin. Our mission is to deliver transformative skincare solutions that boost
+            confidence and promote skin health.</p>
+          <p>Founded with a passion for clean beauty, we've grown into a trusted name in skincare, serving
+            thousands of customers who value quality and authenticity.</p>
+        </div>
+
+        <div class="about-features-grid">
+          <article class="feature-card">
+            <div class="feature-icon">🌿</div>
+            <h3>Natural Ingredients</h3>
+            <p>Ethically sourced, organic ingredients without harmful chemicals. We use only the finest
+              botanical extracts and plant-based formulations.</p>
+          </article>
+          <article class="feature-card">
+            <div class="feature-icon">🔬</div>
+            <h3>Scientific Formulation</h3>
+            <p>Backed by dermatological research and expertise. Each product is tested and proven effective
+              for visible results.</p>
+          </article>
+          <article class="feature-card">
+            <div class="feature-icon">💖</div>
+            <h3>Skin Health Focus</h3>
+            <p>Designed to nurture and enhance your skin's natural vitality. We prioritize your skin's
+              long-term health over quick fixes.</p>
+          </article>
+          <article class="feature-card">
+            <div class="feature-icon">🐰</div>
+            <h3>Cruelty-Free</h3>
+            <p>We never test on animals. Our products are 100% cruelty-free and vegan-friendly.</p>
+          </article>
+          <article class="feature-card">
+            <div class="feature-icon">♻️</div>
+            <h3>Eco-Friendly</h3>
+            <p>Sustainable packaging and environmentally conscious practices. We care for your skin and the
+              planet.</p>
+          </article>
+          <article class="feature-card">
+            <div class="feature-icon">✨</div>
+            <h3>Premium Quality</h3>
+            <p>Luxury skincare at accessible prices. Experience the best without breaking the bank.</p>
+          </article>
+        </div>
+
+        <div class="about-cta">
+          <h3>Ready to Transform Your Skin?</h3>
+          <p>Explore our range of premium skincare products crafted with love and science.</p>
+          <a href="products.html" class="cta-button">Shop Now</a>
+        </div>
+      </div>
+    </section>
+  </main>
+  <!-- Footer -->
+  <footer role="contentinfo">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <h3>SkinNova System</h3>
+        <p>Premium Ayurvedic skincare rooted in ancient wisdom. Nurturing your natural beauty with pure, herbal
+          formulations crafted with love and science.</p>
+        <div class="footer-social">
+          <a href="https://www.instagram.com/skinnova_skincare_" target="_blank" rel="noopener noreferrer"
+            class="social-icon instagram" aria-label="Visit our Instagram">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <path
+                d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+            </svg>
+          </a>
+          <a href="https://www.linkedin.com/sameeya-banu" target="_blank" rel="noopener noreferrer"
+            class="social-icon linkedin" aria-label="Visit our LinkedIn">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <path
+                d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+            </svg>
+          </a>
+          <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="social-icon twitter"
+            aria-label="Visit our Twitter">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <path
+                d="M18.244 2H21.5l-7.19 8.217L22.5 22h-6.828l-5.356-7.05L3.9 22H.64l7.69-8.79L1.5 2h6.996l4.84 6.42L18.244 2z" />
+            </svg>
+          </a>
+          <a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer" class="social-icon youtube"
+            aria-label="Visit our YouTube">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <path
+                d="M23.492 6.186c0-.85-.694-1.544-1.544-1.544H20.4V4.637c0-.85-.694-1.544-1.544-1.544H3.652c-.85 0-1.544.694-1.544 1.544v13.727c0 .85.693 1.543 1.543 1.543h17.896c.85 0 1.543-.693 1.543-1.543V6.186zM9.77 17V7l7 5-7 5z" />
+            </svg>
+          </a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="mailto:sameeyabanu986@gmail.com">sameeyabanu986@gmail.com</a></li>
+          <li><a href="tel:+8147285730">+91 8147285730</a></li>
+          <li>Maleeha Skincare Lane,<br>Beauty Place, India</li>
+        </ul>
+      </div>
+      <div class="footer-col footer-newsletter">
+        <h4>Newsletter</h4>
+        <p>Subscribe for Ayurvedic skincare tips, exclusive offers, and new product launches.</p>
+        <form class="newsletter-form"
+          onsubmit="event.preventDefault(); this.reset(); alert('Thank you for subscribing! 🌿');">
+          <input type="email" placeholder="Your email address" required />
+          <button type="submit">Subscribe</button>
+        </form>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 SkinNova System Skincare. All rights reserved. Crafted with 🌿 and care.</p>
+    </div>
+  </footer>
+
+  <script src="database.js" defer></script>
+  <script src="chatbot.js" defer></script>
+  <script src="script.js" defer></script>
+</body>
+
+</html>
